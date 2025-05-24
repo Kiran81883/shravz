@@ -1,0 +1,104 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Next Page</title>  
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Short+Stack&family=Homemade+Apple&display=swap'>  
+    <style>  
+        body {  
+            background-color: #f9f3f1;  
+            font-family: 'Homemade Apple', cursive;  
+            text-align: center;  
+            padding: 20px;  
+            margin: 0;  
+        }  
+        h1 {  
+            color: #e63946; /* Emphasize color */  
+        }  
+        .content {  
+            max-width: 600px;  
+            margin: 20px auto;  
+            padding: 20px;  
+            border: 1px solid #ccc;  
+            border-radius: 10px;  
+            background-color: white;  
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+        }  
+        .letter-frame {  
+            padding: 20px;  
+            border: 5px solid #e63946; /* Letter border color */  
+            border-radius: 10px;  
+            background-color: #fff8f0; /* Light background for letter feel */  
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
+            text-align: left; /* Left-align the text for letter format */  
+            position: relative; /* For inner decoration */  
+        }  
+        .letter-frame::before {  
+            content: '';  
+            position: absolute;  
+            top: -15px;  
+            left: -15px;  
+            right: -15px;  
+            bottom: -15px;  
+            border: 2px dashed #e63946; /* Dashed border for a letter feel */  
+            border-radius: 10px;  
+            pointer-events: none; /* To allow clicks through */  
+        }  
+        .letter-text {  
+            min-height: 200px; /* Set a minimum height for the letter */  
+            resize: vertical; /* Allows vertical resizing */  
+            overflow-y: auto; /* Scroll if content overflows */  
+            border: 1px solid #ccc;  
+            border-radius: 5px;  
+            padding: 10px;  
+            font-size: 16px; /* Font size for the letter content */  
+            color: #333; /* Text color */  
+        }  
+        .next-button {  
+            background-color: #ff6f61; /* Button color */  
+            color: white; /* Button text color */  
+            border: none;  
+            border-radius: 5px;  
+            padding: 10px 20px;  
+            font-size: 18px;  
+            cursor: pointer;  
+            margin-top: 20px;  
+            transition: background-color 0.3s;  
+        }  
+        .next-button:hover {  
+            background-color: #ff4f3b; /* Darker shade on hover */  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div class="content">   
+        <div class="letter-frame">  
+            <h2>Dear Bujji💖,</h2>  
+            <div class="letter-text" contenteditable="true">  
+                <p>Happy birthday to the most important person in my life my love ❤️..........,</p>
+                <p>ela vacchavo naa life loki vacchav i hope mana journey will last forever mana last breath varaku.. 
+                    naaku telisi naa varaku ur my love for this life🫶.
+                    ninnu naa life loki pampinandhuku i am very thankfull to god🙏.
+                </p>
+                <p>neeku nacchina life evvataaniki i will try the best.. i hope u will have an wonderful day ahead 
+                    once again happy birthday 🥳 to naa shrimati shravzz💗💗..
+                    enti veedu shrimati annadu ani aalochisthunnava nenu eppudo fix ayipoya nuvve naa wife ani andhuke
+                    sare le enti inka ee page lone vuntaava next page ki pove baby❤️
+                </p>
+                
+                
+            </div>  
+            <p>itlu nee mogudu,</p>    
+        </div>  
+
+        <!-- Next button added here -->  
+        <button class="next-button" onclick="goToThirdPage()">Next</button>  
+    </div>  
+    <script>  
+        function goToThirdPage() {  
+            window.location.href = './forth-page.html'; // Check that this file exists and is named correctly  
+        }  
+    </script>  
+</body>  
+</html>  

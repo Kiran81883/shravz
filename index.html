@@ -1,0 +1,116 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Bujji ❤️</title>  
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Short+Stack&family=Homemade+Apple&display=swap'>  
+  <style>  
+    body {  
+      background-color: #f9f3f1;  
+      font-family: 'Homemade Apple', cursive;  
+      text-align: center;  
+      padding: 20px;  
+      margin: 0;  
+    }  
+    .paper {  
+      background: white;  
+      border-radius: 10px;  
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+      padding: 20px;  
+      margin: 15px auto;  
+      max-width: 320px; 
+      position: relative; 
+    }  
+
+    .heart {  
+      background-color: #ffcccc;  
+      padding: 30px;  
+    }  
+
+    .image img {  
+      width: 100%;  
+      border-radius: 10px;  
+      margin-top: 10px;  
+      transition: transform 0.3s;  
+    }  
+
+    .image img:hover {  
+      transform: scale(1.05);  
+    }  
+
+    .red {  
+      background-color: #ffdddd;  
+    }  
+
+    .p1 {  
+      font-size: 20px;  
+      font-weight: bold;  
+      margin: 0; /* Remove margin for better alignment */  
+    }  
+
+    .p2 {  
+      font-size: 24px;  
+      color: #e63946; /* Emphasize color for the favorite person */  
+      margin: 10px 0;  
+    }  
+
+    .draggable {  
+      cursor: grab; /* Change cursor when hovering */  
+    }  
+    /* Style for the next button */  
+    .next-button {  
+      background-color: #ff6f61; /* Button color */  
+      color: white; /* Button text color */  
+      border: none;  
+      border-radius: 5px;  
+      padding: 10px 20px;  
+      font-size: 18px;  
+      cursor: pointer;  
+      margin-top: 20px;  
+      transition: background-color 0.3s;  
+    }  
+
+    .next-button:hover {  
+      background-color: #ff4f3b;
+    }  
+  </style>  
+</head>  
+<body>  
+  <div class="paper heart">  
+    <h2>HAPPY Birthday My Love ❤️</h2>  
+  </div>  
+  <div class="paper image draggable">  
+    <p>I fallen in</p>  
+    <h2>Love with You 😍</h2>  
+    <img src="../pics/IMG-20250419-WA0025.jpg" alt="Love Image 1"/>  
+  </div>  
+  <div class="paper image draggable">  
+    <p>Forever and always</p>  
+    <img src="../pics/IMG-20250419-WA0031.jpg" alt="Love Image 2"/>  
+  </div>  
+  <div class="paper image draggable">  
+    <p>How can my love be</p>  
+    <h2>So cute ❤️</h2>  
+    <img src="../pics/IMG-20250419-WA0034.jpg" alt="Love Image 3"/>  
+  </div>  
+
+  <div class="paper red">  
+    <p class="p1">UMMMMMA</p>  
+    <p class="p2">💖😍</p>  
+  </div>  
+
+  <div class="paper">  
+    <p class="p1"><img src="./Untitled.png" alt="Love Image 3"/></p>  
+    <p class="p1">🤍🤍<span style="color: red;">❤️</span></p>  
+  </div>  
+  <!-- Next button -->  
+  <button class="next-button" onclick="goToNextPage()">Next</button>  
+  <script>  
+    function goToNextPage() {   
+      window.location.href = './next-page.html'; 
+    }  
+  </script>  
+  <script src="./script.js"></script>  
+</body>  
+</html>  

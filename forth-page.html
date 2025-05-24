@@ -1,0 +1,188 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Fourth Page</title>  
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Short+Stack&family=Homemade+Apple&display=swap'>  
+    <style>  
+        body {  
+            background-color: #f9f3f1;  
+            font-family: 'Homemade Apple', cursive;  
+            text-align: center;  
+            padding: 20px;  
+            margin: 0;  
+        }  
+        h1 {  
+            color: #e63946; /* Emphasize color */  
+        }  
+        .content {  
+            max-width: 800px;  
+            margin: 20px auto;  
+            padding: 20px;  
+            border: 1px solid #ccc;  
+            border-radius: 10px;  
+            background-color: white;  
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+        }  
+        .love-symbols {  
+            position: relative;  
+            height: 200px; /* Adjust height as necessary */  
+            overflow: hidden; /* Keep symbols within bounds */  
+        }  
+        .love-symbol {  
+            position: absolute;  
+            bottom: 0;  
+            font-size: 30px; /* Size of the love symbols */  
+            opacity: 0; /* Initially transparent */  
+            animation: bubble 5s infinite;  
+            pointer-events: none; /* Disable interactions */  
+        }  
+        @keyframes bubble {  
+            0% {  
+                bottom: 0;  
+                opacity: 0;  
+                transform: translateX(0);  
+            }  
+            50% {  
+                opacity: 1;  
+                transform: translateX(-10px); /* Slight horizontal movement */  
+            }  
+            100% {  
+                bottom: 100%; /* Move to the top */  
+                opacity: 0; /* Fade out */  
+                transform: translateX(10px);  
+            }  
+        }  
+        /* Randomize position and animation delay for each symbol */  
+        .love-symbol:nth-child(1) { left: 10%; animation-delay: 0s; }  
+        .love-symbol:nth-child(2) { left: 30%; animation-delay: 0.5s; }  
+        .love-symbol:nth-child(3) { left: 50%; animation-delay: 1s; }  
+        .love-symbol:nth-child(4) { left: 70%; animation-delay: 1.5s; }  
+        .love-symbol:nth-child(5) { left: 90%; animation-delay: 2s; }  
+        .love-symbol:nth-child(6) { left: 80%; animation-delay: 2.5s; }  
+
+        .grid {  
+            display: grid;  
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */  
+            gap: 20px;  
+            padding: 20px;  
+        }  
+        .frame {  
+            background-color: #ffffff;  
+            border-radius: 15px;  
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+            position: relative;  
+            overflow: hidden;  
+            transition: transform 0.3s, box-shadow 0.3s;  
+            padding: 20px; /* Add padding for heart design */  
+            border: 5px solid transparent;  
+            border-image: url('https://example.com/heart-border.png') 30 round; /* Heart border image */  
+        }  
+        .frame:hover {  
+            transform: scale(1.05);  /* Slight zoom effect on hover */  
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);  
+        }  
+        .frame img {  
+            width: 100%;  
+            height: auto;  
+            border-radius: 10px;  
+            display: block;  
+        }  
+        .overlay {  
+            position: absolute;  
+            top: 0;  
+            left: 0;  
+            right: 0;  
+            bottom: 0;  
+            background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background */  
+            color: white;  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+            opacity: 0;  
+            transition: opacity 0.3s;  
+        }  
+        .frame:hover .overlay {  
+            opacity: 1;  /* Show overlay on hover */  
+        }  
+        .previous-button {  
+            background-color: #ff6f61; /* Button color */  
+            color: white; /* Button text color */  
+            border: none;  
+            border-radius: 5px;  
+            padding: 10px 20px;  
+            font-size: 18px;  
+            cursor: pointer;  
+            margin-top: 20px;  
+            transition: background-color 0.3s;  
+        }  
+        .previous-button:hover {  
+            background-color: #ff4f3b; /* Darker shade on hover */  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div class="content">  
+        <div class="love-symbols">  
+            <span class="love-symbol">❤️</span>  
+            <span class="love-symbol">💙</span>  
+            <span class="love-symbol">💖</span>  
+            <span class="love-symbol">💚</span>  
+            <span class="love-symbol">💛</span>  
+            <span class="love-symbol">💜</span>  
+        </div>  
+        <h1>Happy Birthday bujji 💙🤍💖!</h1>  
+        <p>acheive all the goals u wish for i am always with you my bujji!</p>  
+
+        <div class="grid">  
+            <!-- Placeholders for images (frames) -->  
+            <div class="frame">  
+                <img src="../pics/IMG-20250419-WA0033.jpg" alt="Image of birthday friends celebration">  
+                <div class="overlay">Te amo</div>  
+            </div>  
+            <div class="frame">  
+                <img src="../pics/IMG-20250419-WA0009.jpg" alt="Picture of a birthday cake">  
+                <div class="overlay">Je t'aime</div>  
+            </div>  
+            <div class="frame">  
+                <img src="../pics/IMG-20250419-WA0017.jpg" alt="Image of birthday decorations">  
+                <div class="overlay">Ti amo</div>  
+            </div>  
+            <div class="frame">  
+                <img src="../pics/IMG-20250419-WA0054.jpg" alt="Placeholder Image 4">  
+                <div class="overlay">Ich liebe dich</div>  
+            </div>  
+            <div class="frame">  
+                <img src="../pics/kiran.jpg" alt="Placeholder Image 5">  
+                <div class="overlay">Eu te amo</div>  
+            </div>  
+            <div class="frame">  
+                <img src="../pics/IMG-20250419-WA0021.jpg" alt="Placeholder Image 6">  
+                <div class="overlay">Ya tebya lyublyu</div>  
+            </div>  
+            <div class="frame">  
+                <img src="../pics/IMG-20250419-WA0052.jpg" alt="Placeholder Image 7">  
+                <div class="overlay">umma😽</div>  
+            </div>  
+            <div class="frame">  
+                <img src="../pics/IMG-20250419-WA0035 - Copy.jpg" alt="Placeholder Image 8">  
+                <div class="overlay">i love u</div>  
+            </div>  
+            <div class="frame">  
+                <img src="../pics/IMG-20250419-WA0034.jpg" alt="Placeholder Image 9">  
+                <div class="overlay">Saranghae</div>  
+            </div>  
+        </div>  
+
+        <!-- Previous button to go back -->  
+        <button class="previous-button" onclick="goToPreviousPage()">shravzz💗💗</button>  
+    </div>  
+
+    <script>  
+        function goToPreviousPage() {  
+            window.location.href = './next-page.html'; // Path to return to the previous page  
+        }  
+    </script>  
+</body>  
+</html>  
